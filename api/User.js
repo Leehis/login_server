@@ -52,7 +52,7 @@ router.post('/signup', (req, res) => {
         } else {
           //Try to create new user
 
-          //password handleing
+          //password handling
           const saltRounds = 10
           bcrypt
             .hash(password, saltRounds)
